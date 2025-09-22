@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCc8gT1Lj27ZMGkfZQvK8DMUoGj_TxrHoU",
+    authDomain: "sfi-programs.firebaseapp.com",
+    databaseURL: "https://sfi-programs-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "sfi-programs",
+    storageBucket: "sfi-programs.firebasestorage.app",
+    messagingSenderId: "176751716091",
+    appId: "1:176751716091:web:6bd396b77e00c3dd4c325e",
+    measurementId: "G-8J2CHT5V1P"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SFI Programs</title>
@@ -225,5 +249,7 @@
       document.getElementById("programForm").reset();
     });
   </script>
+
 </body>
 </html>
+
